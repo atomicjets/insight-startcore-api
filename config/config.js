@@ -19,12 +19,12 @@ function getUserHome() {
 
 var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight');
 
-if (process.env.INSIGHT_NETWORK === 'livenet') {
+if (process.env.INSIGHT_NETWORK === 'startcoin') {
   env = 'livenet';
   db = home;
   port = '3000';
-  b_port = '8332';
-  p2p_port = '8333';
+  b_port = '6667';
+  p2p_port = '9247';
 } else {
   env = 'testnet';
   db = home + '/testnet';

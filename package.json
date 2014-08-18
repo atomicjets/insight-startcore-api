@@ -1,12 +1,12 @@
 {
-  "name": "insight-bitcore-api",
+  "name": "insight-startcore-api",
   "description": "An open-source bitcoin blockchain API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
   "version": "0.2.7",
   "author": {
     "name": "Ryan X Charles",
     "email": "ryan@bitpay.com"
   },
-  "repository": "git://github.com/bitpay/insight-api.git",
+  "repository": "git://github.com/atomicjets/insight-startcore-api.git",
   "contributors": [
     {
       "name": "Matias Alejo Garcia",
@@ -38,10 +38,10 @@
     "insight",
     "insight api",
     "blockchain",
-    "bitcoin api",
+    "startcoin api",
     "blockchain api",
     "json",
-    "bitcore"
+    "startcore"
   ],
   "engines": {
     "node": "*"
@@ -54,7 +54,7 @@
     "async": "*",
     "base58-native": "0.1.2",
     "bignum": "*",
-    "bitcore": "git://github.com/bitpay/bitcore.git#aa41c70cff2583d810664c073a324376c39c8b36",
+    "bitcore": "git://github.com/atomicjets/startcore.git#299ddb0b233a60d1ff7c03733943a7c679373ce6",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "*",
