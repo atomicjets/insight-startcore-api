@@ -20,7 +20,7 @@ function getUserHome() {
 var home = process.env.INSIGHT_DB || (getUserHome() + '/.insight');
 
 if (process.env.INSIGHT_NETWORK === 'startcoin') {
-  env = 'livenet';
+  env = 'startcoin';
   db = home;
   port = '3000';
   b_port = '6667';
