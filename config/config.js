@@ -53,15 +53,13 @@ var isWin = /^win/.test(process.platform);
 var isMac = /^darwin/.test(process.platform);
 var isLinux = /^linux/.test(process.platform);
 
-/*
+
  if (!dataDir) {
  if (isWin) dataDir = '%APPDATA%\\StartCOIN-v2\\';
  if (isMac) dataDir = process.env.HOME + '/Library/Application Support/StartCOIN-v2/';
  if (isLinux) dataDir = process.env.HOME + '/.startcoin-v2/';
  }
  dataDir += network === 'testnet' ? 'testnet3' : '';
- */
-dataDir = null;
 
 var safeConfirmations = process.env.INSIGHT_SAFE_CONFIRMATIONS || 6;
 var ignoreCache = process.env.INSIGHT_IGNORE_CACHE || 0;

@@ -949,7 +949,7 @@ Block.prototype.parse = function parse(parser, headerOnly) {
 Block.prototype.calcHash = function calcHash() {
   var header = this.getHeader();
 
-  return util.twoSha256(header);
+  return util.x11Digest(header);
 };
 
 Block.prototype.checkHash = function checkHash() {
@@ -1094,7 +1094,7 @@ Block.prototype.checkBlock = function checkBlock(txs) {
 };
 
 Block.getBlockValue = function getBlockValue(height) {
-  var subsidy = 50 * util.COIN;
+  var subsidy = 40 * util.COIN;
   subsidy = subsidy / (Math.pow(2, Math.floor(height / 210000)));
   subsidy = Math.floor(subsidy);
   subsidy = new Bignum(subsidy);
@@ -1313,7 +1313,7 @@ var Transaction = require('./Transaction');
 var util = require('../util');
 var Parser = require('../util/BinaryParser');
 var buffertools = require('buffertools');
-var doubleSha256 = util.twoSha256;
+var doubleSha256 = util.x11Digest;
 var SecureRandom = require('./SecureRandom');
 var nonce = SecureRandom.getPseudoRandomBuffer(8);
 var nodeUtil = require('util');

@@ -54,7 +54,7 @@
     "async": "*",
     "base58-native": "0.1.2",
     "bignum": "*",
-    "bitcore": "git://github.com/atomicjets/startcore.git#c53949bf62c66133afb9e618e662b797ea3c0f74",
+    "bitcore": "git://github.com/atomicjets/startcore.git#c281ffb458536769ece48715e9e7911b3ceffe45",
     "bufferput": "git://github.com/bitpay/node-bufferput.git",
     "buffertools": "*",
     "commander": "*",
